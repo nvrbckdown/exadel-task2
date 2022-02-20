@@ -1,0 +1,32 @@
+<html>
+    <head>    
+        <title>{{ title }}</title>
+        <p>{{ description }}</p>
+    </head>
+    <body>
+        <h1>HELLO WORLD PAGE</h1>
+        <h2>OS:
+            <li>OS: {{ os_name }}</li>
+            <li>OS version: {{ os_version }}</li>
+            <li>OS release: {{ os_release }} </li>
+        </h2>
+
+        <h2>DISK: 
+            <li>Total: {{ disk_total }}</li>
+            <li>Used: {{ disk_used }}</li>
+            <li>Used: {{ disk_free }}</li>
+        </h2>
+
+        <h2>Memory:
+            <li>Total: {{ mem_total }}</li>
+            <li>Used: {{ mem_used }}</li>
+            <li>Free: {{ mem_free }}</li>
+
+        </h2>
+        
+        <h3>Process: </h3>
+
+        {% for proc in processes %}
+        <li>{{ proc }}</li>
+        {% endfor %}
+    </body>
