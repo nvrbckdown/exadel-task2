@@ -1,0 +1,10 @@
+Instance 1: RHEL IP: 18.193.99.63 this IP is Elastic IP which is binded to my account
+Instance 2: Ubuntu IP: 3.71.17.206 this IP is Floating IP which means it is not static. It will be changed if instance will be restarted
+
+SSH key was assigned during creation for both instance.
+Also to be able to connect between two instances I made secure copy of private key into .ssh folders of each instance ($HOME/.ssh/)
+To be able to ping both servers security settings were updated. (Add ICMP rule to inbound)
+
+Nginx was installed to Ubuntu instance
+Web page is available on nvrbckdown.uz
+
