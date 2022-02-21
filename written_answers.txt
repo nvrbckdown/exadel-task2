@@ -8,3 +8,22 @@ To be able to ping both servers security settings were updated. (Add ICMP rule t
 Nginx was installed to Ubuntu instance
 Web page is available on nvrbckdown.uz
 
+Extra TASK 1:
+
+VPC: exadel-task2
+Internet Gateway: exadel-task2-igw
+Subnet: exadel-task2-sn
+Route Table: Add 0.0.0.0/0 to exadel-task2-igw
+
+Instance 1: 
+	OS: Ubuntu, nginx enable (extra.nvrbckdown.uz)
+	Public IP: 52.59.244.4
+	Private IP: 10.0.1.39
+
+Instance 2:
+	OS: RedHat Linux
+	Public IP: 18.185.87.35
+	Private IP: 10.0.1.181
+
+Extra Task 2:
+URL:https://exadel-task.s3.eu-central-1.amazonaws.com/image_2022-02-20_22-22-19.png
