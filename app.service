@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve app
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/exadel-task2
+Environment="PATH=/home/ubuntu/exadel-task2/venv/bin"
+ExecStart=/home/ubuntu/exadel-task2/venv/bin/uwsgi --ini app.ini
+
+[Install]
+WantedBy=multi-user.target
