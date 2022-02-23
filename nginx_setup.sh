@@ -1,6 +1,9 @@
 #!/bin/bash
 
-URL=DOMAIN_NAME
+URL=nvrbckdown.uz
+
+apt install nginx
+systemctl start nginx
 
 cd
 git clone https://github.com/nvrbckdown/exadel-task2.git
